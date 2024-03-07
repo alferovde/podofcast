@@ -4,8 +4,31 @@ padding: 0;
 }
 
 .container{
-  width: 1248px;
+  max-width: 1248px;
   margin: 0 auto;
   background-color: #e2b9b9;
 }
 
+
+@media (max-width: 1024px){
+  .container{
+    width: 887px;
+    margin: 0 auto;
+    background-color: #c9e2b9;
+  }
+}
+
+
+
+@media (max-width: 375px){
+
+  .main{
+     min-width: 375px;
+  }
+ 
+  .container{
+    width: 315px;
+    margin: 0 auto;
+    background-color: #6786ec;
+  }
+}
