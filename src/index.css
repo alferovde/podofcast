@@ -1,20 +1,37 @@
+*{
+  --mainBG: #F7EDE8;
+--mainGradient: linear-gradient(
+  90deg,
+  rgba(255, 255, 255, 1) 0%,
+  rgba(247, 237, 232, 1) 50%,
+  rgba(255, 255, 255, 1) 100%
+);
+
+}
+
 body {
 margin: 0;
 padding: 0;
+font-family: "Montserrat Alternates", sans-serif;
+min-width: 320px;
+
+
 }
 
 .container{
-  max-width: 1248px;
+  max-width: 1160px;
   margin: 0 auto;
-  background-color: #e2b9b9;
+  padding: 0 10px;
+  box-sizing: border-box;
+  
 }
 
 
 @media (max-width: 1024px){
   .container{
-    width: 887px;
+    max-width: 980px;
     margin: 0 auto;
-    background-color: #c9e2b9;
+   
   }
 }
 
@@ -23,12 +40,14 @@ padding: 0;
 @media (max-width: 375px){
 
   .main{
-     min-width: 375px;
+    /* min-width: 320px; */
   }
  
   .container{
-    width: 315px;
+    /* min-width: 320px; */
     margin: 0 auto;
-    background-color: #6786ec;
+
   }
 }
+
+

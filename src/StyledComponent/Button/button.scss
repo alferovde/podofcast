@@ -1,0 +1,14 @@
+.my__btn {
+  border-radius: 8px;
+  outline: none;
+  border: 2px solid black;
+  box-sizing: border-box;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:active {
+    transform: scale(0.97);
+  }
+}

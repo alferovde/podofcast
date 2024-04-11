@@ -1,0 +1,48 @@
+.mobile__bg {
+  position: absolute;
+  background-color: #0000005d;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+}
+
+.mobile-menu__wrapper {
+  min-width: 320px;
+  padding: 24px;
+  box-sizing: border-box;
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 55;
+  background-color: #fff;
+
+  overflow: hidden;
+}
+
+.mobile-menu__btn {
+  width: 30px;
+  height: 4px;
+  background-color: black;
+  border-radius: 4px;
+  position: fixed;
+  top: 50px;
+  right: 10px;
+  z-index: 555;
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 0px;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 4px;
+  }
+
+  &::after {
+    top: -10px;
+  }
+}
