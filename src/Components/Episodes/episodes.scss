@@ -1,0 +1,66 @@
+.episodes {
+  min-height: 1456px;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    background-image: url("../../images/ScribbleBlack.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+    width: 150px;
+    height: 150px;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+}
+
+.episodes__wrapper {
+  padding-top: 140px;
+}
+
+.episodes__title {
+  max-width: 500px;
+  margin: 0 auto;
+  text-align: center;
+
+  p {
+    font-size: 22px;
+  }
+}
+
+.episodes__items {
+  margin-left: -10px;
+  margin-right: -10px;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.episodes__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+
+  button {
+    width: 253px;
+    height: 62px;
+  }
+}
+
+@media (max-width: 1179px) {
+  .episodes__items {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 400px) {
+  .episodes__items {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}

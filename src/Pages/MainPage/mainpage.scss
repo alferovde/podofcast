@@ -1,5 +1,120 @@
-.main-page__wrapper {
-  height: 100vh;
-
+.main-page {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background: var(--mainGradient);
+}
+
+.bg__imgs {
+  &::before {
+    background-image: url("../../images/HeroStars.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 250px;
+    right: 5%;
+    top: 150px;
+  }
+
+  &::after {
+    background: url("../../images/HeroShapeSwirl-star.png"),
+      url("../../images/HeroShapeSwirl.png");
+    background-repeat: no-repeat;
+    background-position: 300px 130px, 0 0;
+    background-size: 10%, 70%;
+
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 300px;
+    left: 2%;
+    top: 150px;
+  }
+}
+
+@media (max-width: 900px) {
+  .bg__imgs {
+    &::before {
+      background-image: url("../../images/HeroStars.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      position: absolute;
+      content: "";
+      width: 100px;
+      height: 150px;
+      right: 15%;
+      top: 150px;
+    }
+
+    &::after {
+      background: url("../../images/HeroShapeSwirl-star.png"),
+        url("../../images/HeroShapeSwirl.png");
+      background-repeat: no-repeat;
+      background-position: 200px 90px, 0 0px;
+      background-size: 7%, 60%;
+
+      position: absolute;
+      content: "";
+      width: 350px;
+      height: 200px;
+      left: 2%;
+      top: 150px;
+    }
+  }
+}
+
+@media (max-width: 680px) {
+  .bg__imgs {
+    &::before {
+      background-image: url("../../images/HeroStars.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 100px;
+      right: 5%;
+      top: 200px;
+    }
+
+    &::after {
+      background: url("../../images/HeroShapeSwirl-star.png"),
+        url("../../images/HeroShapeSwirl.png");
+      background-repeat: no-repeat;
+      background-position: 130px 60px, 0 0px;
+      background-size: 5%, 40%;
+
+      position: absolute;
+      content: "";
+      width: 350px;
+      height: 200px;
+      left: 2%;
+      top: 150px;
+    }
+  }
+}
+@media (max-width: 461px) {
+  .bg__imgs {
+    &::before {
+      background-image: url("../../images/HeroStars.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      background-size: contain;
+      position: absolute;
+      content: "";
+      width: 50px;
+      height: 100px;
+      right: 40%;
+      top: -50px;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
 }

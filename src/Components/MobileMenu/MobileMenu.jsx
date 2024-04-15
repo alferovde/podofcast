@@ -17,9 +17,13 @@ const MobileMenu = () => {
         setModalAnimate("");
       }, 500);
     }
-
-    // setModalAnimate("animate__backOutRight");
   };
+
+  useEffect(() => {
+    if (openModal) document.body.style.overflow = "hidden";
+
+    return () => (document.body.style.overflow = "unset");
+  }, [openModal]);
 
   console.log(modalAnimate);
   return (

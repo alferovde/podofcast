@@ -7,13 +7,24 @@
   rgba(255, 255, 255, 1) 100%
 );
 
+--secondGradient: linear-gradient(
+  90deg,
+  rgba(255, 255, 255, 1) 0%,
+ #edf3f7,
+  rgba(255, 255, 255, 1) 100%
+);
+
+--colorAccent: #CD4631;
+--colorTextAccent: #81ADC8;
+
 }
 
 body {
-margin: 0;
+margin: 0 auto;
 padding: 0;
 font-family: "Montserrat Alternates", sans-serif;
 min-width: 320px;
+max-width: 1800px;
 
 
 }
@@ -24,6 +35,42 @@ min-width: 320px;
   padding: 0 10px;
   box-sizing: border-box;
   
+}
+
+.container__out{
+  max-width: 1560px;
+  margin: 0 auto;
+  padding: 0 10px;
+  box-sizing: border-box;
+
+ 
+  position: relative;
+
+ 
+
+  
+}
+
+h1, h2, h3, h4{
+  margin: 0;
+}
+
+h1{
+  font-size: 96px;
+  letter-spacing: -4px;
+ 
+}
+
+h2{
+  font-size: 59px;
+  letter-spacing: -2px;
+  line-height: 120%;
+  text-align: center;
+}
+
+.spiner_loading{
+
+  padding-top: 10%;
 }
 
 
