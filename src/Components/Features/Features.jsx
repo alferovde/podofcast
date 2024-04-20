@@ -5,7 +5,7 @@ import Button from "../../StyledComponent/Button/Button";
 const Features = ({ featuresData }) => {
   const renderFeaturesItems = () => {
     return featuresData.features_items?.map((item) => {
-      return <FeaturesItem {...item} />;
+      return <FeaturesItem key={item.id} {...item} />;
     });
   };
 

@@ -1,0 +1,237 @@
+.pricing__item {
+  //   overflow: hidden;
+  .pricing__item__top,
+  .pricing__item__bottom {
+    border: 2px solid black;
+    max-width: 373px;
+    border-radius: 8px;
+    box-sizing: border-box;
+  }
+
+  .pricing__item__top {
+    padding: 40px 60px 40px 30px;
+    margin-bottom: 15px;
+    position: relative;
+    background-color: #fff;
+    h3 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 160%;
+    }
+
+    .popular {
+      position: absolute;
+      background-color: #cd4631;
+      width: 119px;
+      height: 25px;
+      font-size: 12px;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      border-radius: 8px;
+      top: 50px;
+      left: 200px;
+    }
+
+    .price__btn {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 90px;
+      width: 100%;
+      button {
+        width: 160px;
+        height: 62px;
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: 700;
+
+        span {
+          color: #cd4631;
+          font-size: 22px;
+          font-weight: 700;
+        }
+      }
+    }
+  }
+
+  .pricing__item__bottom {
+    padding: 40px;
+    height: 312px;
+    background-color: #fff;
+    span {
+      font-size: 14px;
+      font-weight: 700;
+      margin-bottom: 20px;
+    }
+
+    ul {
+      //   margin: 0;
+      padding-left: 15px;
+      font-size: 16px;
+
+      li {
+        line-height: 160%;
+        margin-bottom: 10px;
+        margin-left: -5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1070px) {
+  .pricing__item {
+    .pricing__item__top {
+      padding: 20px 40px 20px 10px;
+      margin-bottom: 15px;
+      position: relative;
+      background-color: #fff;
+      h3 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 14px;
+        line-height: 160%;
+      }
+
+      .popular {
+        position: absolute;
+        background-color: #cd4631;
+        width: 100px;
+        height: 25px;
+        font-size: 10px;
+
+        top: 25px;
+        left: 150px;
+      }
+
+      .price__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 50px;
+
+        button {
+          width: 130px;
+          height: 42px;
+          font-size: 12px;
+        }
+
+        p {
+          font-size: 12px;
+          font-weight: 700;
+
+          span {
+            color: #cd4631;
+            font-size: 16px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+
+    .pricing__item__bottom {
+      padding: 20px;
+      max-height: 250px;
+      background-color: #fff;
+      span {
+        font-size: 12px;
+        font-weight: 700;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        //   margin: 0;
+        padding-left: 15px;
+        font-size: 12px;
+
+        li {
+          line-height: 160%;
+          margin-bottom: 5px;
+          margin-left: -5px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 848px) {
+  .pricing__item {
+    .pricing__item__top {
+      padding: 20px 40px 20px 10px;
+      margin-bottom: 15px;
+      position: relative;
+      background-color: #fff;
+      h3 {
+        font-size: 26px;
+        margin-bottom: 10px;
+      }
+      p {
+        font-size: 12px;
+        line-height: 160%;
+      }
+
+      .popular {
+        position: absolute;
+        background-color: #cd4631;
+        width: 80px;
+        height: 25px;
+        font-size: 8px;
+
+        top: 25px;
+        left: 110px;
+      }
+
+      .price__btn {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 20px;
+
+        button {
+          width: 80px;
+          height: 32px;
+          font-size: 10px;
+        }
+
+        p {
+          font-size: 10px;
+          font-weight: 700;
+
+          span {
+            color: #cd4631;
+            font-size: 14px;
+            font-weight: 700;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 670px) {
+  .pricing__item {
+    width: 100%;
+
+    .pricing__item__top {
+      border: 2px solid black;
+      max-width: 100%;
+
+      .popular {
+        top: 25px;
+        left: 50%;
+      }
+    }
+
+    .pricing__item__bottom {
+      display: none;
+    }
+  }
+}

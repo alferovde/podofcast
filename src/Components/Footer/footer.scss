@@ -1,0 +1,154 @@
+.footer {
+  min-height: 618px;
+  background: var(--secondGradient);
+}
+
+.footer__top {
+  padding-top: 140px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+}
+
+.top__left {
+  max-width: 275px;
+
+  .top__left-logo {
+    span {
+      margin-left: 20px;
+    }
+  }
+
+  p {
+    margin: 40px 0;
+    line-height: 160%;
+  }
+
+  ul {
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.top__center {
+  ul {
+    padding: 0;
+    display: flex;
+    width: 300px;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 0;
+  }
+
+  li {
+    list-style: none;
+    width: 110px;
+  }
+
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: black;
+  }
+}
+
+.top__right {
+  p {
+    margin: 0;
+
+    ul {
+      li {
+        img {
+          height: 40px;
+        }
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    gap: 20px;
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    img {
+      height: 20px;
+    }
+    li {
+      list-style: none;
+    }
+  }
+}
+
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid #4d4d4d;
+  padding-top: 20px;
+
+  .footer__left {
+    span {
+      color: #cd4631;
+    }
+  }
+
+  .footer__right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+
+@media (max-width: 850px) {
+  .footer {
+    min-height: 438px;
+  }
+
+  .footer__top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .top__right {
+      display: none;
+    }
+  }
+}
+
+@media (max-width: 570px) {
+  .footer {
+    min-height: 338px;
+  }
+
+  .footer__top {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    .top__left {
+      display: none;
+    }
+    .top__center {
+      // width: 100%;
+      ul {
+        width: 100%;
+        gap: 50px;
+        justify-content: center;
+      }
+    }
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    align-items: center;
+
+    .footer__left {
+      p {
+        font-size: 14px;
+      }
+    }
+  }
+}

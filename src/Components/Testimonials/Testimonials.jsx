@@ -8,8 +8,6 @@ import { Navigation } from "swiper/modules";
 const Testimonials = ({ testimonialsData }) => {
   const global_path_server = "http://127.0.0.1:8000/storage/";
 
-  console.log(testimonialsData);
-
   const renderSlider = () => {
     return testimonialsData.testi_slider?.map((slide) => {
       return (

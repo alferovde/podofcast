@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./mobilemenu.scss";
+import Navigation from "../Navigation/Navigation";
 
 const MobileMenu = () => {
   const [openModal, setOpenModal] = useState(false);
@@ -25,7 +26,6 @@ const MobileMenu = () => {
     return () => (document.body.style.overflow = "unset");
   }, [openModal]);
 
-  console.log(modalAnimate);
   return (
     <>
       <div className="mobile-menu__btn" onClick={() => openMobileMenu()}></div>
@@ -35,7 +35,7 @@ const MobileMenu = () => {
           <div
             className={`mobile-menu__wrapper animate__animated ${modalAnimate}`}
           >
-            1 2 3
+            <Navigation />
           </div>
         </>
       ) : undefined}

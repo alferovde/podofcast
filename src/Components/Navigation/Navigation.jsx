@@ -1,10 +1,11 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
+import { menuArray } from "../../Store/localstore";
 
 import "./navigation.scss";
-const Navigation = ({ array }) => {
+const Navigation = () => {
   const renderMenu = () => {
-    return array.map((item) => {
+    return menuArray.map((item) => {
       return (
         <NavLink key={item.id} to={item.href}>
           {item.link}

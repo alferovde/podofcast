@@ -1,0 +1,219 @@
+.download {
+  background: var(--secondGradient);
+  min-height: 816px;
+  padding-top: 150px;
+  border-bottom: 1px solid #4d4d4d;
+
+  &::before {
+    content: "";
+    background-image: url("../../images/ScribbleBlack.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: 0px 0px;
+    width: 150px;
+    height: 150px;
+    top: -70px;
+    left: 50%;
+    transform: translate(-50%);
+    position: absolute;
+  }
+}
+
+.download__bg-img {
+  position: relative;
+  margin-left: -10px;
+  margin-right: -10px;
+
+  &::before {
+    content: "";
+    background-image: url("../../images/download-left.png");
+    background-repeat: no-repeat;
+    background-size: 70%;
+
+    width: 700px;
+    height: 550px;
+    top: 198px;
+    left: 200px;
+    transform: translate(-50%);
+    position: absolute;
+    box-shadow: 73px -3px 18px -43px rgb(255, 255, 255) inset;
+  }
+
+  &::after {
+    content: "";
+    background-image: url("../../images/download-right.png");
+    background-repeat: no-repeat;
+    background-size: 90%;
+    background-position: 30px 0px;
+    width: 500px;
+    height: 750px;
+    top: -86px;
+    right: -00px;
+
+    position: absolute;
+    box-shadow: -73px -3px 18px -43px rgb(255, 255, 255) inset;
+  }
+}
+
+.download__title {
+  max-width: 486px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  span {
+    width: 52px;
+    height: 28px;
+    border-radius: 4px;
+    border: 1px solid #cd4631;
+    color: #cd4631;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 6px 3px 6px 3px;
+  }
+
+  h2 {
+    margin: 20px auto 28px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+}
+
+.download__btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 140px;
+
+  button {
+    width: 210px;
+    height: 62px;
+    margin-bottom: 24px;
+    position: relative;
+
+    &::before {
+      content: "";
+      background-image: url("../../images/sponsorGroupBtn.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      width: 50px;
+      height: 50px;
+      top: -30px;
+      left: 210px;
+      transform: translate(-50%);
+      position: absolute;
+    }
+  }
+
+  ul {
+    display: flex;
+    gap: 10px;
+    padding: 0;
+
+    li {
+      list-style: none;
+    }
+  }
+}
+
+@media (max-width: 1391px) {
+  .download__bg-img {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &::before {
+      content: "";
+      background-image: url("../../images/download-left.png");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      // background-position: 0px 0px;
+      width: 500px;
+      height: 350px;
+      top: 330px;
+      left: 200px;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/download-right.png");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: 30px 0px;
+      width: 300px;
+      height: 550px;
+      top: 150px;
+      right: -00px;
+    }
+  }
+}
+@media (max-width: 935px) {
+  .download__bg-img {
+    position: relative;
+    margin-left: -10px;
+    margin-right: -10px;
+
+    &::before {
+      content: "";
+      background-image: url("../../images/download-left.png");
+      background-repeat: no-repeat;
+      background-size: 70%;
+      // background-position: 0px 0px;
+      width: 400px;
+      height: 250px;
+      top: 415px;
+      left: 200px;
+      transform: translate(-50%);
+    }
+
+    &::after {
+      content: "";
+      background-image: url("../../images/download-right.png");
+      background-repeat: no-repeat;
+      background-size: 90%;
+      background-position: 30px 0px;
+      width: 200px;
+      height: 450px;
+      top: 320px;
+      right: -00px;
+    }
+  }
+}
+
+@media (max-width: 529px) {
+  .download__bg-img {
+    display: none;
+  }
+
+  .download__title {
+    max-width: 486px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+      margin: 20px auto 28px;
+      font-size: 44px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .download__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+  }
+}

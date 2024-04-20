@@ -1,0 +1,235 @@
+.founder-item {
+  width: 50%;
+
+  border-radius: 8px;
+  padding: 16px;
+  box-sizing: border-box;
+  display: flex;
+  box-shadow: 8px 8px 0px 0px rgba(0, 0, 0, 0.96);
+  border: 2px solid black;
+  position: relative;
+
+  &:first-child {
+    &::before {
+      content: "";
+      background-image: url("../../images/blog_top.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      width: 100px;
+      height: 100px;
+      top: 10px;
+      right: -30px;
+      transform: translate(-50%);
+      position: absolute;
+    }
+  }
+
+  &:last-child {
+    &::before {
+      content: "";
+      background-image: url("../../images/founder_vector.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+
+      width: 100px;
+      height: 100px;
+      top: 10px;
+      right: -30px;
+      transform: translate(-50%);
+      position: absolute;
+    }
+  }
+}
+
+.founder-item__content {
+  color: #4d4d4d;
+  justify-content: flex-end;
+  display: flex;
+  flex-direction: column;
+  margin-left: 16px;
+  span {
+    font-size: 14px;
+  }
+
+  h3 {
+    font-size: 36px;
+    color: black;
+    margin: 6px 0 10px 0;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 160%;
+    margin-bottom: 20px;
+  }
+
+  .founder__follows {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #4d4d4d;
+    padding-top: 10px;
+    justify-content: flex-end;
+    // width: 150px;
+
+    span {
+      font-weight: 700;
+      margin-right: 20px;
+    }
+
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      gap: 5px;
+    }
+  }
+}
+
+@media (max-width: 990px) {
+  .founder-item__content {
+    h3 {
+      font-size: 30px;
+      color: black;
+      margin: 6px 0 10px 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 160%;
+      margin-bottom: 20px;
+    }
+
+    .founder__follows {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      span {
+        font-weight: 700;
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+@media (max-width: 930px) {
+  .founder-item {
+    width: 100%;
+  }
+
+  .founder-item__content {
+    h3 {
+      font-size: 50px;
+      color: black;
+      margin: 6px 0 10px 0;
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 160%;
+      margin-bottom: 20px;
+    }
+
+    .founder__follows {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      span {
+        font-weight: 700;
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (max-width: 590px) {
+  .founder-item {
+    width: 100%;
+  }
+
+  .founder-item__content {
+    h3 {
+      font-size: 30px;
+      color: black;
+      margin: 6px 0 10px 0;
+    }
+
+    p {
+      font-size: 12px;
+      line-height: 160%;
+      margin-bottom: 20px;
+    }
+
+    .founder__follows {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+
+      span {
+        font-weight: 700;
+        margin-right: 0px;
+        margin-bottom: 10px;
+      }
+
+      ul {
+        justify-content: space-between;
+      }
+    }
+  }
+}
+
+@media (max-width: 490px) {
+  .founder-item {
+    &:first-child {
+      &::before {
+        content: "";
+        background-image: url("../../images/blog_top.png");
+        background-repeat: no-repeat;
+        background-size: 50%;
+        //   background-position: 0px 0px;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        right: 0px;
+        transform: translate(-50%);
+        position: absolute;
+      }
+    }
+
+    &:last-child {
+      &::before {
+        content: "";
+        background-image: url("../../images/founder_vector.png");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        //   background-position: 0px 0px;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        right: 0px;
+        transform: translate(-50%);
+        position: absolute;
+      }
+    }
+  }
+
+  .founder-item__img {
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+}

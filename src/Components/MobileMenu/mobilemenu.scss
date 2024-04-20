@@ -23,6 +23,16 @@
   background-color: #fff;
 
   overflow: hidden;
+
+  .navigation__main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 100px;
+    a {
+      font-size: 32px;
+    }
+  }
 }
 
 .mobile-menu__btn {

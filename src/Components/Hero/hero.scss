@@ -1,0 +1,72 @@
+.hero__wrapper {
+  &::before {
+    background-image: url("../../images/HeroStars.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    position: absolute;
+    content: "";
+    width: 170px;
+    height: 250px;
+    right: 5%;
+    top: 150px;
+  }
+
+  &::after {
+    background: url("../../images/HeroShapeSwirl-star.png"),
+      url("../../images/HeroShapeSwirl.png");
+    background-repeat: no-repeat;
+    background-position: 300px 130px, 0 0;
+    background-size: 10%, 70%;
+
+    position: absolute;
+    content: "";
+    width: 450px;
+    height: 300px;
+    left: 2%;
+    top: 150px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .hero__wrapper {
+    &::before {
+      background-image: url("../../images/HeroStars.png");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      position: absolute;
+      background-size: contain;
+      content: "";
+      width: 100px;
+      height: 150px;
+      right: 5%;
+      top: 50px;
+    }
+
+    &::after {
+      background: url("../../images/HeroShapeSwirl-star.png"),
+        url("../../images/HeroShapeSwirl.png");
+      background-repeat: no-repeat;
+      background-position: 300px 130px, 0 0;
+      background-size: 10%, 70%;
+
+      position: absolute;
+      content: "";
+      width: 250px;
+      height: 200px;
+      left: 2%;
+      top: 50px;
+    }
+  }
+}
+
+@media (max-width: 499px) {
+  .hero__wrapper {
+    &::before {
+      display: none;
+    }
+
+    &::after {
+      display: none;
+    }
+  }
+}

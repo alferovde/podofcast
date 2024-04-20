@@ -1,0 +1,61 @@
+.about-bottom {
+  background-color: #fff;
+  min-height: 100vh;
+  margin-top: -100px;
+  padding-bottom: 40px;
+}
+
+.about-bottom__wrapper {
+  padding-top: 200px;
+}
+
+.about-bottom__title {
+  text-align: center;
+}
+
+.about-bottom__img {
+  margin-top: 30px;
+
+  img {
+    width: 100%;
+  }
+}
+
+.history {
+  margin-top: 50px;
+
+  h3 {
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    max-width: 400px;
+    margin-bottom: 60px;
+    &::before {
+      content: "";
+      background-image: url("../../images/sponsorGroup.png");
+      background-repeat: no-repeat;
+      background-size: 100%;
+      background-position: 0px 0px;
+      width: 50px;
+      height: 50px;
+      top: -20px;
+      left: 15px;
+      transform: translate(-50%);
+      position: absolute;
+    }
+  }
+}
+
+.history__items {
+  display: flex;
+  gap: 20px;
+  padding-bottom: 80px;
+  .history_item {
+    width: 50%;
+    p {
+      line-height: 160%;
+    }
+  }
+  border-bottom: 1px solid #4d4d4d;
+}

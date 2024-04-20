@@ -3,15 +3,13 @@ import "./episodes.scss";
 import EpisodeItem from "../EpisodeItem/EpisodeItem";
 import Button from "../../StyledComponent/Button/Button";
 const Episodes = ({ episodeData }) => {
-  console.log(episodeData.episode_items);
   let arr = episodeData.episode_items
     ? [...episodeData.episode_items].reverse()
     : undefined;
 
-  console.log(arr);
   const renderEpisode = () => {
     return arr?.map((item) => {
-      return <EpisodeItem {...item} />;
+      return <EpisodeItem key={item.id} {...item} />;
     });
   };
 
@@ -25,7 +23,6 @@ const Episodes = ({ episodeData }) => {
         <div className="episodes__items">{renderEpisode()}</div>
 
         <div className="episodes__btn">
-          {" "}
           <Button btnColor>BROWSE ALL EPISODES</Button>
         </div>
       </div>

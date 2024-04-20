@@ -5,9 +5,8 @@ const EpisodeItem = ({ img, id, title, text, tags, hosted }) => {
 
   const renderTags = () => {
     return tags.split(",").map((item) => {
-      console.log(item);
       return (
-        <div className="item-tag">
+        <div className="item-tag" key={item}>
           <a href="#">{item}</a>
         </div>
       );
@@ -16,7 +15,7 @@ const EpisodeItem = ({ img, id, title, text, tags, hosted }) => {
 
   const renderHosted = () => {
     return hosted.split(",").map((item) => {
-      return <img src={`http://${item.slice(0)}`} />;
+      return <img src={`http://${item.slice(0)}`} key={item} />;
     });
   };
 
