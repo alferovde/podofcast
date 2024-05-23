@@ -2,8 +2,6 @@ import React from "react";
 import "./pricing.scss";
 import PricingItem from "../PricingItem/PricingItem";
 const Pricing = ({ pricingData }) => {
-  //   console.log(pricingData.pricig_items);
-
   const renderPricing = () => {
     return pricingData.pricig_items?.map((item) => {
       return <PricingItem key={item.id} {...item} />;

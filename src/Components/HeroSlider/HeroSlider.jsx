@@ -5,7 +5,7 @@ import "swiper/css";
 import "swiper/css/pagination";
 import SliderComponent from "../SliderComponent/SliderComponent";
 const HeroSlider = ({ heroSlider }) => {
-  const global_path_server = "http://127.0.0.1:8000/storage/";
+  const global_path_server = process.env.REACT_APP_STORAGE_SERVER;
 
   const renderSlider = () => {
     return heroSlider?.map((slide) => {

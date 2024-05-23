@@ -9,6 +9,7 @@ import GetToUp from "./Components/GetToUp/GetToUp";
 import { Routes, Route, Outlet } from "react-router-dom";
 import AboutPage from "./Pages/AboutPage/AboutPage";
 import EpisodesPage from "./Pages/EpisodesPage/EpisodesPage";
+import MorePage from "./Pages/MorePage/MorePage";
 function App() {
   const [scrollPosition, setScrollPosition] = useState(0);
   const handleScroll = () => {
@@ -34,7 +35,7 @@ function App() {
 
           <Route path="/about" element={<AboutPage />} />
           <Route path="/episodes" element={<EpisodesPage />} />
-          {/*  <Route path="more" element={<DashboardTasks />} />*/}
+          <Route path="/more" element={<MorePage />} />
         </Route>
       </Routes>
 

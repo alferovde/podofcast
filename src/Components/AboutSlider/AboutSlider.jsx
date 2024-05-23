@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import "swiper/scss";
 import "swiper/scss/navigation";
-const global_path_server = "http://127.0.0.1:8000/storage/";
+const global_path_server = process.env.REACT_APP_STORAGE_SERVER;
 const AboutSlider = ({ data }) => {
   console.log("-->", data.about_slider);
 

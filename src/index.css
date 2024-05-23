@@ -87,11 +87,11 @@ h2{
 @media (max-width: 375px){
 
   .main{
-    /* min-width: 320px; */
+  
   }
  
   .container{
-    /* min-width: 320px; */
+  
     margin: 0 auto;
 
   }

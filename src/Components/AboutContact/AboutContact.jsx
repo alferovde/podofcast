@@ -55,7 +55,6 @@ const AboutContact = () => {
 
         <div className="form__btn">
           <p>
-            {" "}
             <span>*</span>required
           </p>
           <Button btnColor className="about-btn__subscribe">

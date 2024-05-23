@@ -5,7 +5,7 @@ export const fetcAboutPage = createAsyncThunk(
 
   async () => {
     let result = await axios.get(
-      "http://127.0.0.1:8000/api/podofcast/aboutpage"
+      "http://mainserver.dealferov.ru/public/api/podofcast/aboutpage"
     );
 
     return result;

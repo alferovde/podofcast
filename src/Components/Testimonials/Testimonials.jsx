@@ -6,7 +6,7 @@ import "swiper/css/pagination";
 import qwot from "../../images/qwot.png";
 import { Navigation } from "swiper/modules";
 const Testimonials = ({ testimonialsData }) => {
-  const global_path_server = "http://127.0.0.1:8000/storage/";
+  const global_path_server = process.env.REACT_APP_STORAGE_SERVER;
 
   const renderSlider = () => {
     return testimonialsData.testi_slider?.map((slide) => {
@@ -38,10 +38,6 @@ const Testimonials = ({ testimonialsData }) => {
         <Swiper
           slidesPerView={3}
           spaceBetween={30}
-          //   pagination={{
-          //     clickable: true,
-          //   }}
-          //   slideClass="swiper-slide-testi"
           modules={[Navigation]}
           navigation={true}
           className="mySwiper-testi"
